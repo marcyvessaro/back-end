@@ -1,0 +1,10 @@
+<?php
+$nome =$_POST['nome'];
+$email =$_POST['email'];
+$telefone =$_POST['telefone'];
+$data_nas =$_POST['data_nascimento'];
+$cidade =$_POST['cidade'];
+
+
+$result = msqli_query($con, *INSERT INTO cliente(nome))
+?>
