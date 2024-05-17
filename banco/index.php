@@ -1,15 +1,15 @@
 <?php
 
 if(isset($_POST['submit'])){
-    print_r('Nome: '. $_POST ['nome']);
+    print_r('Username: '. $_POST ['nome']);
+    print_r('<br>');
+    print_r('Nome de exibição: '. $_POST['exb']);
     print_r('<br>');
     print_r('Email: '. $_POST['email']);
     print_r('<br>');
-    print_r('Telefone: '. $_POST['telefone']);
+    print_r('Senha '. $_POST['senha']);
     print_r('<br>');
-    print_r('Data: '. $_POST['data_nascimento']);
-    print_r('<br>');
-    print_r('Cidade: '. $_POST['cidade']);
+    print_r('Confirmar senha: '. $_POST['confirm']);
     print_r('<br>');
     
 }
@@ -35,7 +35,12 @@ if(isset($_POST['submit'])){
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
+                    <label for="nome" class="labelInput">Username</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="exb" id="email" class="inputUser" required>
+                    <label for="exb" class="labelInput">Nome de exibição</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
@@ -43,17 +48,12 @@ if(isset($_POST['submit'])){
                     <label for="email" class="labelInput">Email</label>
                 </div>
                 <br><br>
-                <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone" class="labelInput">Telefone</label>
-                </div>
-                <br><br>
-                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
-                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <label for="password"><b>senha:</b></label>
+                <input type="password" name="senha" id="senha" required>
                 <br><br><br>
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
+                    <input type="password" name="confirm" id="confirm" class="inputUser" required>
+                    <label for="confirm" class="labelInput">confirmar senha</label>
                 </div>
 
                 <input type="submit" name="submit" id="submit">

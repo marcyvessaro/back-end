@@ -1,10 +1,16 @@
-<?php
+<?php {
 $nome =$_POST['nome'];
+$exb =$_POST['exb'];
 $email =$_POST['email'];
-$telefone =$_POST['telefone'];
-$data_nas =$_POST['data_nascimento'];
-$cidade =$_POST['cidade'];
+$senha =$_POST['senha'];
+$confirm =$_POST['confirm'];
 
 
-$result = msqli_query($con, *INSERT INTO cliente(nome))
+
+
+$result = msqli_query($con, "INSERT INTO cliente(nome, exb, email, senha, confirm) values ('$nome', '$email')");
+
+}
+
+echo('cadastrado com sucesso!');
 ?>
